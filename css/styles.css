@@ -1,0 +1,219 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'interstate', sans-serif;
+}
+
+/* Main Colors */
+:root{
+    --primarycolor:#6699CC;
+    --secondarycolor:#CC3399;
+    --lightgrey:#CCCCCC;
+}
+html, body {
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* navbar */
+.alert-banner {
+    background-color: var(--secondarycolor);
+}
+.alert-banner > h2 {
+    font-family: 'interstate', sans-serif;
+    font-weight: 200;
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    padding: 4px;
+}
+.navbar {
+    background-color: var(--primarycolor);
+    height: 80px;
+    width: 100%;
+}
+.navbar-logo {
+    font-family: 'interstate', sans-serif;
+    color: white;
+}
+.navbar ul {
+    display: flex;
+    margin-left: auto;
+    justify-content: space-between;
+    list-style: none;
+}
+.navbar a {
+    font-family: 'interstate', sans-serif;
+    padding-left: 15px;
+    margin: 0 0px;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: var(--secondarycolor);
+}
+.flex-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+@media only screen and (max-width: 510px) {
+.navbar {
+    padding: 0;
+    height: 60px;
+}
+.navbar-logo{
+    font-size: 1em;
+}
+.navbar a {
+    font-family: 'interstate compressed', sans-serif;
+    padding-left: 4px;
+    font-size: 1.25em;
+}
+}
+
+/*Main Section*/
+.intro {
+    font-family: 'interstate', sans-serif;
+    margin-top: 50px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-color: var(--lightgrey);
+    padding: 0px 0px 5px 10px;
+}
+.intro > h1 {
+    font-family: 'interstate', sans-serif;
+    font-weight: 700;
+}
+
+.intro > p {
+    font-family: 'interstate', sans-serif;
+    font-weight: 100;
+}
+
+.main-section h1 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}  
+.main-section h3 {
+    padding-bottom: 10px;
+}  
+.main-section p {
+    padding-top: 10px;
+    padding-bottom: 4px;
+    padding-right: 30px;
+    padding-left: 10px;
+}  
+
+.block {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.meBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+#me {
+    max-width: 100%;
+    grid-column-start: 1;
+    grid-column-end: -1; 
+}
+.meBlock button {
+    margin: 2px 5px 2px 5px;
+}
+.meBlock button:focus {
+    background-color: var(--secondarycolor);
+    color: white;
+    border-color:
+}
+
+
+
+/*.breathe {
+    padding-top: 40px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+.breathe h2 {
+    font-family: 'interstate', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--lightgrey);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;    
+}*/
+
+
+/*Footer*/
+.footer {
+    margin-top: auto;
+    /*padding: 20px;
+    width: 100%;*/
+    background-color: var(--lightgrey);
+    color: white;
+    text-align: center;
+    flex-shrink: 0;
+}
+.footer p {
+    padding: 20px;
+    font-family: 'interstate', sans-serif;
+    font-size: 1.5em;
+}
+.flex-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/*  Utilities  */
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 8vw;
+
+}
+
+/*.main-section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.main-section-img {
+    justify-self: center;
+}
+*/
+/*@media only screen and (max-width: 510px) {
+    .navbar {
+        padding: 0;
+        height: 60px;
+}
+    .navbar-logo{
+    font-family: interstate, sans-serif;
+    color: white;
+    font-size: 1em;
+}
+    .navbar a {
+    font-family: interstate compressed, sans-serif;
+    padding-left: 4px;
+    margin: 0 0px;
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+}*/
+
